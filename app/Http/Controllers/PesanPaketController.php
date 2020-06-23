@@ -6,6 +6,7 @@ use App\Paket;
 use App\PesanPaket;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;
 use Carbon\Carbon;
 
@@ -71,9 +72,8 @@ class PesanPaketController extends Controller
             ->where('invoice', '=', $code_invoice)
             ->first();
 
-        //ddd($data);
-
-        return redirect('pesanpaket/datadiri/'.$data->kodeBayar);
+//        return redirect('pesanpaket/datadiri/'.$data->kodeBayar);
+        return redirect(URL::signedRoute('pesanpaket.datadiri', $data->kodeBayar, now()->addMinutes(60)));
     }
 
     /**

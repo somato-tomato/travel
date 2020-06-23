@@ -33,16 +33,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('konfirmasi') }}" target="_blank">Konfirmasi</a>
                     </li>
-                    <li class="dropdown nav-item">
-                        <a href="javascript:void(0)" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                            <i class="fa fa-cogs d-lg-none d-xl-none"></i> Jasa
-                        </a>
-                        <div class="dropdown-menu dropdown-with-icons">
-                            <a href="javascript:void(0)" class="dropdown-item">
-                                <i class="tim-icons icon-paper"></i> Penyewaan Mobil
-                            </a>
-                        </div>
-                    </li>
+{{--                    <li class="dropdown nav-item">--}}
+{{--                        <a href="javascript:void(0)" class="dropdown-toggle nav-link" data-toggle="dropdown">--}}
+{{--                            <i class="fa fa-cogs d-lg-none d-xl-none"></i> Jasa--}}
+{{--                        </a>--}}
+{{--                        <div class="dropdown-menu dropdown-with-icons">--}}
+{{--                            <a href="javascript:void(0)" class="dropdown-item">--}}
+{{--                                <i class="tim-icons icon-paper"></i> Penyewaan Mobil--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </li>--}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/blog') }}">Artikel</a>
                     </li>

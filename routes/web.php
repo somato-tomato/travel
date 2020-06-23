@@ -56,5 +56,5 @@ Route::post('pesanpaket/paket/simpan', 'PesanPaketController@store');
 Route::get('pesanpaket/{kodebayar}/success', 'PesanCostumerController@pass');
 Route::get('pesanpaket/info/{kodeBayar}', 'PesanCostumerController@info');
 Route::post('pesanpaket/costumer/simpan', 'PesanCostumerController@save');
-Route::get('pesanpaket/datadiri/{kodeBayar}', 'PesanCostumerController@isiData');
+Route::get('pesanpaket/datadiri/{kodeBayar}', 'PesanCostumerController@isiData')->name('pesanpaket.datadiri')->middleware('signed');
 Route::get('infopaket/{slug}', 'PaketController@showPaket');

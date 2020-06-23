@@ -160,7 +160,7 @@ class PesanCostumerController extends Controller
             request(['kodeBayar', 'idPesanPaket', 'invoice', 'totalHarga', 'sisaBayar'])
         );
 
-        //\Mail::to($form_data->email)->send(new Invoices($form_data));
+        \Mail::to($form_data->email)->send(new Invoices($form_data));
 
         $data = DB::table('pesan_costumers')
             ->where('invoice', '=', $request->invoice)
