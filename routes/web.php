@@ -11,6 +11,8 @@
 |
 */
 
+//TODO Add offline confirmation for admin
+
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
